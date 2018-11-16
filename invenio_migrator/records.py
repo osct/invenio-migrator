@@ -180,6 +180,7 @@ class RecordDumpLoader(object):
             record['_files'].append(dict(
                 bucket=str(obj.bucket.id),
                 key=obj.key,
+                file_id=str(obj.file.id),
                 version_id=str(obj.version_id),
                 size=obj.file.size,
                 checksum=obj.file.checksum,
